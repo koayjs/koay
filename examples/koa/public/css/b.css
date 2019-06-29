@@ -1,0 +1,12 @@
+.div:nth-child(0) {
+  background: url("a.jpg") center/1200px 557px no-repeat;
+}
+.div:nth-child(1) {
+  background: url("b.jpg") center/1200px 557px no-repeat;
+}
+.div:nth-child(2) {
+  background: url("c.jpg") center/1200px 557px no-repeat;
+}
+body {
+  font-size: 16px;
+}
