@@ -1,0 +1,32 @@
+{
+  "name": "corie-stylus",
+  "version": "1.0.2",
+  "description": "A stylus middleware for koa2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/corie.git"
+  },
+  "keywords": [
+    "corie",
+    "stylus",
+    "css",
+    "koa2",
+    "sass",
+    "less"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/corie/issues"
+  },
+  "homepage": "https://github.com/fengxinming/corie/tree/master/packages/corie-stylus#readme",
+  "dependencies": {
+    "corie-utils": "^3.0.1",
+    "lodash": "^4.17.11",
+    "stylus": "^0.54.5"
+  }
+}

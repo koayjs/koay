@@ -1,0 +1,27 @@
+{
+  "name": "corie-body-parser",
+  "version": "1.0.0",
+  "description": "a body parser for corie or koa2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/corie.git"
+  },
+  "keywords": [
+    "corie",
+    "bodyparser",
+    "koa"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/corie/issues"
+  },
+  "homepage": "https://github.com/fengxinming/corie/tree/master/packages/corie-body-parser#readme",
+  "dependencies": {
+    "formidable": "^1.2.1"
+  }
+}

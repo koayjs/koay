@@ -1,0 +1,5 @@
+[{
+  "method": "GET",
+  "path": "/module2",
+  "controller": ["module2.func1"]
+}]

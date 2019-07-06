@@ -1,0 +1,10 @@
+[{
+  "/path7": "home.index",
+  "/path8": ["home.index"]
+}, {
+  "/path20": {
+    "path": "/path9",
+    "controller": "home.index"
+  },
+  "/path10": ["home.index"]
+}]

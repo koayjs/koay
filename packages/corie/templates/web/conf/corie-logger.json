@@ -1,0 +1,33 @@
+{
+  "appenders": {
+    "app": {
+      "type": "dateFile",
+      "filename": "./logs/app.log",
+      "pattern": "-yyyy-MM-dd"
+    },
+    "http": {
+      "type": "dateFile",
+      "filename": "./logs/http.log",
+      "pattern": "-yyyy-MM-dd"
+    },
+    "error": {
+      "type": "dateFile",
+      "filename": "./logs/error.log",
+      "pattern": "-yyyy-MM-dd"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["error"],
+      "level": "ERROR"
+    },
+    "app": {
+      "appenders": ["app"],
+      "level": "INFO"
+    },
+    "http": {
+      "appenders": ["http"],
+      "level": "INFO"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "corie-ip-filter",
+  "version": "1.0.0",
+  "description": "A ip filter for corie or koa2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/corie.git"
+  },
+  "keywords": [
+    "corie",
+    "ip",
+    "filter",
+    "koa2"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/corie/issues"
+  },
+  "homepage": "https://github.com/fengxinming/corie/tree/master/packages/corie-ip-filter#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

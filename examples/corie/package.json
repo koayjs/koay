@@ -1,0 +1,34 @@
+{
+  "name": "corie",
+  "version": "1.0.0",
+  "description": "a generator for koa",
+  "main": "app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "prod": "cross-env NODE_ENV=production node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fengxinming",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^8.6.5",
+    "chalk": "^2.4.1",
+    "corie-configuration": "^1.0.0",
+    "lodash": "^4.17.10",
+    "lru-cache": "^4.1.3",
+    "nib": "^1.1.2",
+    "poststylus": "^1.0.0",
+    "pug": "^2.0.3",
+    "rucksack-css": "^1.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "nodemon": "^1.18.4"
+  }
+}

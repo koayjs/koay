@@ -1,58 +1,24 @@
 {
-  "name": "koay",
-  "version": "1.0.0",
-  "description": "A web framework based on Koa for Node.js",
+  "name": "corie",
+  "version": "2.0.0",
+  "description": "a generator for koa",
   "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "example": "examples",
-    "lib": "lib",
-    "test": "tests"
-  },
   "scripts": {
-    "test": "jest --detectOpenHandles --config jest.config.js"
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "prod": "cross-env NODE_ENV=production node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "koa",
-    "koay",
-    "nodejs",
-    "http",
-    "middleware",
-    "framework"
-  ],
-  "author": "Jesse Feng",
+  "author": "fengxinming",
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.15.2",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.5.0"
-  },
-  "dependencies": {
-    "celia": "^5.5.1",
-    "finalhandler": "^1.1.2",
-    "kick-array": "^1.2.2",
-    "koa": "^2.7.0",
-    "koa-favicon": "^2.0.1",
-    "koa-mount": "^4.0.0",
-    "koa-static-cache": "^5.1.2",
-    "koa-views": "^6.2.0",
-    "koay-body": "^1.0.0",
-    "koay-router": "^1.1.1",
-    "koay-stylus": "^1.0.0",
-    "koay-ua": "^1.0.0",
-    "kyla": "^1.0.2",
-    "on-finished": "^2.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koayjs/koay.git"
-  },
-  "bugs": {
-    "url": "https://github.com/koayjs/koay/issues"
-  },
-  "homepage": "https://github.com/koayjs/koay#readme"
+    "cross-env": "^5.1.5",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "nodemon": "^1.17.4"
+  }
 }

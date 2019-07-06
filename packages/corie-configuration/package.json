@@ -1,0 +1,29 @@
+{
+  "name": "corie-configuration",
+  "version": "1.0.2",
+  "description": "united manages your configurations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/corie.git"
+  },
+  "keywords": [
+    "corie",
+    "corie-configuration",
+    "configuration",
+    "config"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/corie/issues"
+  },
+  "homepage": "https://github.com/fengxinming/corie/tree/master/packages/corie-configuration#readme",
+  "dependencies": {
+    "corie-utils": "^3.0.1",
+    "lodash": "^4.17.10"
+  }
+}

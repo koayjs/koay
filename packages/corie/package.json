@@ -1,0 +1,44 @@
+{
+  "name": "corie",
+  "version": "2.0.12",
+  "description": "a generator for koa2",
+  "main": "index.js",
+  "bin": {
+    "corie": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/corie.git"
+  },
+  "keywords": [
+    "corie",
+    "koa"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/corie/issues"
+  },
+  "homepage": "https://github.com/fengxinming/corie/tree/master/packages/corie#readme",
+  "dependencies": {
+    "corie-body-parser": "^1.0.0",
+    "corie-ip-filter": "^1.0.0",
+    "corie-logger": "^2.0.6",
+    "corie-router": "^2.0.1",
+    "corie-stylus": "^1.0.2",
+    "corie-user-agent": "^1.0.2",
+    "corie-utils": "^3.0.1",
+    "koa": "^2.5.3",
+    "koa-compose": "^4.1.0",
+    "koa-favicon": "^2.0.1",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-static-cache": "^5.1.2",
+    "koa-views": "^6.1.4",
+    "lodash": "^4.17.11"
+  }
+}

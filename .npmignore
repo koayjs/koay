@@ -10,9 +10,7 @@
 config.gypi
 CVS
 npm-debug.log
-coverage/
-docs/
-packages/
 examples/
-scripts/
-tests/
+logs/
+.vscode
+.idea

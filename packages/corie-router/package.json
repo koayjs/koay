@@ -1,0 +1,30 @@
+{
+  "name": "corie-router",
+  "version": "2.0.1",
+  "description": "Better configure each route for koa or express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/corie.git"
+  },
+  "keywords": [
+    "corie",
+    "corie-router",
+    "koa",
+    "express",
+    "router",
+    "controller"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/corie/issues"
+  },
+  "homepage": "https://github.com/fengxinming/corie/tree/master/packages/corie-router#readme",
+  "dependencies": {
+    "corie-utils": "^3.0.1"
+  }
+}

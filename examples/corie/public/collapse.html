@@ -1,0 +1,308 @@
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>css3可关闭的菜单导航</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background: #b1b1b1;
+      margin: 0px;
+      padding: 0px;
+      font-size: 14px;
+      color: #000;
+    }
+
+    ul.menu,
+    ul.menu ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: relative;
+      width: 200px;
+      background: #ddd;
+      font-family: arial, sans-serif;
+    }
+
+    ul.menu {
+      z-index: 100;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      margin: 0 auto;
+    }
+
+    ul.menu ul {
+      z-index: 50;
+      border-radius: 0 0 10px 10px;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+    }
+
+    ul.menu li {
+      line-height: 30px;
+      position: relative;
+      text-indent: 10px;
+    }
+
+    ul.menu>li {
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    ul.menu>li a {
+      font: normal 12px/30px arial, sans-serif;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    ul.menu label.open {
+      display: block;
+      background: #c00 url("images/d-arrow.gif") no-repeat 170px 12px;
+      line-height: 30px;
+      position: relative;
+      z-index: 100;
+      font: normal 12px/30px arial, sans-serif;
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+    }
+
+    ul.menu label.open b {
+      color: #ff0;
+    }
+
+    ul.menu span {
+      display: block;
+      background: #c00;
+      line-height: 30px;
+      position: relative;
+      z-index: 100;
+      border-radius: 10px 10px 0 0;
+    }
+
+    ul.menu label img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 30px;
+    }
+
+    ul.menu ul li {
+      margin-top: -30px;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+    }
+
+    ul.menu ul li a {
+      display: block;
+      font: normal 11px/30px arial, sans-serif;
+      color: #000;
+      background: #ccc;
+    }
+
+    ul.menu ul li a:hover {
+      background: #ddd;
+    }
+
+    ul.menu input {
+      position: absolute;
+      left: -9999px;
+    }
+
+    ul.menu li input:checked+label {
+      background: #069;
+    }
+
+    ul.menu li input:checked~ul {
+      background: #ccc;
+      padding-bottom: 10px;
+    }
+
+    ul.menu li input:checked~ul li {
+      margin-top: 0;
+    }
+
+    ul.menu label.close {
+      display: block;
+      width: 200px;
+      height: 30px;
+      background: transparent url("images/u-arrow.gif") no-repeat 170px 12px;
+      line-height: 30px;
+      position: relative;
+      left: 0;
+      z-index: 90;
+      margin-top: -30px
+    }
+
+    ul.menu input.tabs:checked~label.close {
+      display: block;
+      z-index: 200;
+    }
+
+    ul.menu input.close:checked+label.close {
+      display: none;
+    }
+
+    ul.menu input.close:checked~ul {
+      background: #ddd;
+      padding-bottom: 0;
+    }
+
+    ul.menu input.close:checked~ul li {
+      margin-top: -30px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="menu">
+    <li>
+      <a href="#">
+        <span>首页</span>
+      </a>
+    </li>
+    <li>
+      <input type="radio" name="tab1" id="tab1a" class="tabs">
+      <label for="tab1a" class="open" accesskey="2">
+        <img src="images/trans.gif" alt="">买东西 [2]
+        <b>[3]</b>
+      </label>
+      <input type="radio" name="tab1" id="tab1ac" class="tabs close">
+      <label for="tab1ac" class="close" accesskey="3">
+        <img src="images/trans.gif" alt="">
+      </label>
+      <ul>
+        <li>
+          <a href="#">出售廉价</a>
+        </li>
+        <li>
+          <a href="#">互联网商品</a>
+        </li>
+        <li>
+          <a href="#">世界产品</a>
+        </li>
+        <li>
+          <a href="#">环卫商品</a>
+        </li>
+        <li>
+          <a href="#">文件和衣服</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="radio" name="tab1" id="tab1b" class="tabs" checked="checked">
+      <label for="tab1b" class="open" accesskey="4">
+        <img src="images/trans.gif" alt="">服务器 [4]
+        <b>[5]</b>
+      </label>
+      <input type="radio" name="tab1" id="tab1bc" class="tabs close">
+      <label for="tab1bc" class="close" accesskey="5">
+        <img src="images/trans.gif" alt="">
+      </label>
+      <ul>
+        <li>
+          <a href="#">印刷产品</a>
+        </li>
+        <li>
+          <a href="#">相片修改</a>
+        </li>
+        <li>
+          <a href="#">hdsjdhjs</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="radio" name="tab1" id="tab1c" class="tabs">
+      <label for="tab1c" class="open" accesskey="6">
+        <img src="images/trans.gif" alt="">联系我们 [6]
+        <b>[6]</b>
+      </label>
+      <input type="radio" name="tab1" id="tab1cc" class="tabs close">
+      <label for="tab1cc" class="close" accesskey="7">
+        <img src="images/trans.gif" alt="">
+      </label>
+      <ul>
+        <li>
+          <a href="#">支持我们</a>
+        </li>
+        <li>
+          <a href="#">出售的上篇</a>
+        </li>
+        <li>
+          <a href="#">买的产品</a>
+        </li>
+        <li>
+          <a href="#">相 片</a>
+        </li>
+        <li>
+          <a href="#">卡片</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="radio" name="tab1" id="tab1d" class="tabs">
+      <label for="tab1d" class="open" accesskey="8">
+        <img src="images/trans.gif" alt="">商品地址 [8]
+        <b>[3]</b>
+      </label>
+      <input type="radio" name="tab1" id="tab1dc" class="tabs close">
+      <label for="tab1dc" class="close" accesskey="9">
+        <img src="images/trans.gif" alt="">
+      </label>
+      <ul>
+        <li>
+          <a href="#">南半球亚马逊</a>
+        </li>
+        <li>
+          <a href="#">北半球亚马逊</a>
+        </li>
+        <li>
+          <a href="#">中间三不管</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="radio" name="tab1" id="tab1e" class="tabs">
+      <label for="tab1e" class="open" accesskey="F">
+        <img src="images/trans.gif" alt="">联系我们 [F]
+        <b>[G]</b>
+      </label>
+      <input type="radio" name="tab1" id="tab1ec" class="tabs close">
+      <label for="tab1ec" class="close" accesskey="G">
+        <img src="images/trans.gif" alt="">
+      </label>
+      <ul>
+        <li>
+          <a href="#">邮箱地址</a>
+        </li>
+        <li>
+          <a href="#">电 话</a>
+        </li>
+        <li>
+          <a href="#">固定电话</a>
+        </li>
+        <li>
+          <a href="#">家庭地址</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <span>超超超</span>
+      </a>
+    </li>
+  </ul>
+
+</body>
+
+</html>

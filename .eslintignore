@@ -1,8 +1,6 @@
 *.sh
 node_modules
 logs
-dist
-legacy
 coverage
 LICENSE
 README.md
